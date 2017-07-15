@@ -1631,7 +1631,7 @@ def WLAN_check():
 #Rain calculations
 
 rainArray = []
-for i in range(20):
+for i in range(12):
 	rainArray.append(0)
 
 lastRainReading = 0.0
@@ -1645,9 +1645,11 @@ def addRainToArray(plusRain):
 def totalRainArray():
 	global rainArray
 	total = 0
-	for i in range(20):
+	for i in range(12):
 		total = total+rainArray[i]
 	return total
+
+
 
 
 # print out faults inside events
